@@ -23,11 +23,11 @@ namespace em_lab_1
                     positive = false;
                     value = -value;
                 }
-                while (value != 0)
+                do
                 {
                     digits.Insert(0, (byte)(value % 10));
                     value /= 10;
-                }
+                } while (value != 0);
             }
             public long getValue()
             {
