@@ -8,8 +8,7 @@ namespace em_lab_1
 {
     interface IGenerator
     {
-        public long getSeed();
-        public long getNext();
-        public IGenerator(long seed);
+        long getSeed();
+        long getNext();
     }
 }

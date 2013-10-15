@@ -10,7 +10,8 @@ namespace em_lab_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("asd");
+            IGenerator k = new KnutMethod(2345678);
+            Console.WriteLine(k.getNext());
         }
     }
 }
