@@ -10,12 +10,22 @@ namespace LabChM1
         Converter converter;
         long seed;
         long nextValue;
-        public FonNeymon(long value, int countOfNumbers)
+        long value1;
+        long value2;
+        int countOfNumbers;
+        public FonNeymon(long value1, long value2, int countOfNumbers)
         {
             seed = value;
-            nextValue = nextRandom(value, value, countOfNumbers);
+            nextValue = value1;
+            this.value1=value1;
+            this.value2=value2;
+            this.countOfNumbers=countOfNumbers;
         }
-        public long nextRandom(long value1, long value2, int countOfNumbers)
+        public long getSeed()
+        {
+            return seed;
+        }
+        public long getNext()
         {
             int ob = 0;
             int otsekSleva = 0;
@@ -40,14 +50,6 @@ namespace LabChM1
             }
             newValue = converter.getValueFromArray(list);
             nextValue = newValue;
-            return newValue;
-        }
-        public long getSeed()
-        {
-            return seed;
-        }
-        public long getNext()
-        {
             return nextValue;
         }
     }
