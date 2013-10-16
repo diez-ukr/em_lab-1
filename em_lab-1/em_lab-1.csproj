@@ -41,20 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converter.cs" />
-    <Compile Include="FibonacciMethod.cs" />
     <Compile Include="IGenerator.cs" />
     <Compile Include="KnutMethod.cs" />
     <Compile Include="KoveyMethod.cs" />
+<<<<<<< HEAD
     <Compile Include="LevinMethod.cs" />
     <Compile Include="LevisPayne.cs" />
     <Compile Include="LinKongMethod.cs" />
     <Compile Include="MitchelMoor.cs" />
+=======
+>>>>>>> 44590ec3b6c1633c4be317bfd3bed40becff2ff8
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceJoinMinus.cs" />
     <Compile Include="SequenceJoinPlus.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
