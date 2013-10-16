@@ -11,7 +11,7 @@ namespace em_lab_1
         private class Digits
         {
             public List<byte> digits;
-            public bool positive;
+            private bool positive;
 
             public Digits(long value)
             {
