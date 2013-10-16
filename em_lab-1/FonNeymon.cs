@@ -3,19 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LabChM1
+namespace em_lab-1
 {
-    class FonNeymon:IGenerator
+    class FonNeymon : IGenerator
     {
         Converter converter;
         long seed;
-        long nextValue;
-        public FonNeymon(long value, int countOfNumbers)
+        long newValue;
+        long value1;
+        long value2;
+        int countOfNumbers;
+        public FonNeymon(long value1, long value2, int countOfNumbers)
         {
-            seed = value;
-            nextValue = nextRandom(value, value, countOfNumbers);
+            seed = value1;
+            newValue = value1;
+            this.value1 = value1;
+            this.value2 = value2;
+            this.countOfNumbers = countOfNumbers;
         }
-        public long nextRandom(long value1, long value2, int countOfNumbers)
+        public long getSeed()
+        {
+            return seed;
+        }
+        public long getNext()
         {
             int ob = 0;
             int otsekSleva = 0;
@@ -39,16 +49,8 @@ namespace LabChM1
                 list.RemoveAt(countOfNumbers);
             }
             newValue = converter.getValueFromArray(list);
-            nextValue = newValue;
+            value2 = newValue;
             return newValue;
-        }
-        public long getSeed()
-        {
-            return seed;
-        }
-        public long getNext()
-        {
-            return nextValue;
         }
     }
 }
