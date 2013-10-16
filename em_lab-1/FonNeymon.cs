@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace em_lab-1
+namespace LabChM1
 {
-    class FonNeymon
+    class FonNeymon:IGenerator
     {
         Converter converter;
-        /*
-        передаете 2 числа,по-моему везде кроме Мокли они одинаковые,
-        поэтому можете переделать функцию,которая будет принимать 2 арг.,
-        value and countOfNumbers и вместо value1 and value2 подставить просто value.
-        countOfNumbers - количество розрядов числе. желательно она должна совпадать с розрядностью value.
-        */
+        long seed;
+        long nextValue;
+        public FonNeymon(long value, int countOfNumbers)
+        {
+            seed = value;
+            nextValue = nextRandom(value, value, countOfNumbers);
+        }
         public long nextRandom(long value1, long value2, int countOfNumbers)
         {
             int ob = 0;
@@ -38,7 +39,16 @@ namespace em_lab-1
                 list.RemoveAt(countOfNumbers);
             }
             newValue = converter.getValueFromArray(list);
+            nextValue = newValue;
             return newValue;
+        }
+        public long getSeed()
+        {
+            return seed;
+        }
+        public long getNext()
+        {
+            return nextValue;
         }
     }
 }
