@@ -41,11 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs" />
+    <Compile Include="FibonacciMethod.cs" />
     <Compile Include="IGenerator.cs" />
     <Compile Include="KnutMethod.cs" />
     <Compile Include="KoveyMethod.cs" />
+<<<<<<< HEAD
+    <Compile Include="LevinMethod.cs" />
+=======
+    <Compile Include="LinKongMethod.cs" />
+>>>>>>> e6f3b11cc982de20f0b2f62e9828da13ebbd7c85
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SequenceJoinPlus.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
