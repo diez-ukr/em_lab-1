@@ -7,20 +7,16 @@ namespace em_lab_1
     {
         static void Main()
         {
-            IGenerator k = new KnutMethod(-1234567L);
+            IGenerator k = new LevinMethod(-1234567L, 1000L);
             long i = 0;
             var seq = new SortedList<long,long>();
             long next = 0;
             
             try
             {
-                while (true)
+                for (int j = 0; i < 100; i++)
                 {
-                    next = k.getNext();
-                    seq.Add(next, i);
-                    i++;
-                    if (i % 1000 == 0)
-                        Console.WriteLine(i / 1000 + " * 10^3...");
+                    Console.WriteLine(k.getNext());
                 }
             }
             catch (ArgumentException)
