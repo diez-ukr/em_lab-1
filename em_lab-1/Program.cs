@@ -7,24 +7,12 @@ namespace em_lab_1
     {
         static void Main()
         {
-            IGenerator k = new LevinMethod(-1234567L, 1000L);
-            long i = 0;
-            var seq = new SortedList<long,long>();
-            long next = 0;
-            
-            try
+            IGenerator k = new LevisPayne(2378329262345678);
+            for (int i = 0; i < 100; i++)
             {
-                for (int j = 0; i < 100; i++)
-                {
-                    Console.WriteLine(k.getNext());
-                }
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine(i + ") " + next + "; already was at " + seq[next]);
+                Console.WriteLine(k.getNext());
             }
             
-            Console.ReadKey();
         }
     }
 }

@@ -47,7 +47,9 @@
     <Compile Include="KnutMethod.cs" />
     <Compile Include="KoveyMethod.cs" />
     <Compile Include="LevinMethod.cs" />
+    <Compile Include="LevisPayne.cs" />
     <Compile Include="LinKongMethod.cs" />
+    <Compile Include="MitchelMoor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SequenceJoinPlus.cs" />
   </ItemGroup>
