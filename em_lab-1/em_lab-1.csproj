@@ -41,9 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs" />
+    <Compile Include="FibonacciMethod.cs" />
     <Compile Include="IGenerator.cs" />
     <Compile Include="KnutMethod.cs" />
     <Compile Include="KoveyMethod.cs" />
+    <Compile Include="LinKongMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
