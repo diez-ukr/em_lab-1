@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LabChM1
+namespace em_lab-1
 {
-    class FonNeymon:IGenerator
+    class FonNeymon : IGenerator
     {
         Converter converter;
         long seed;
-        long nextValue;
+        long newValue;
         long value1;
         long value2;
         int countOfNumbers;
         public FonNeymon(long value1, long value2, int countOfNumbers)
         {
             seed = value1;
-            nextValue = value1;
-            this.value1=value1;
-            this.value2=value2;
-            this.countOfNumbers=countOfNumbers;
+            newValue = value1;
+            this.value1 = value1;
+            this.value2 = value2;
+            this.countOfNumbers = countOfNumbers;
         }
         public long getSeed()
         {
@@ -49,8 +49,8 @@ namespace LabChM1
                 list.RemoveAt(countOfNumbers);
             }
             newValue = converter.getValueFromArray(list);
-            nextValue = newValue;
-            return nextValue;
+            value2 = newValue;
+            return newValue;
         }
     }
 }
