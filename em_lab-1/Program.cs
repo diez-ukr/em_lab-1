@@ -1,17 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace em_lab_1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            IGenerator k = new KnutMethod(2345678);
-            Console.WriteLine(k.getNext());
+            IGenerator k = new LevinMethod(-1234567L, 1000L);
+            long i = 0;
+            var seq = new SortedList<long,long>();
+            long next = 0;
+            
+            try
+            {
+                for (int j = 0; i < 100; i++)
+                {
+                    Console.WriteLine(k.getNext());
+                }
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine(i + ") " + next + "; already was at " + seq[next]);
+            }
+            
+            Console.ReadKey();
         }
     }
 }
