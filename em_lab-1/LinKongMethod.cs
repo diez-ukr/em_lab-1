@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LabChM1
+namespace em_lab_1
 {
     class LinKongMethod
     {
