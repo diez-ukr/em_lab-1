@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IGenerator.cs" />
     <Compile Include="KnutMethod.cs" />
+    <Compile Include="MitchelMoor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
