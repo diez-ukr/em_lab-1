@@ -15,7 +15,7 @@ namespace LabChM1
         int countOfNumbers;
         public FonNeymon(long value1, long value2, int countOfNumbers)
         {
-            seed = value;
+            seed = value1;
             nextValue = value1;
             this.value1=value1;
             this.value2=value2;
