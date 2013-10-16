@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+em_lab-1/bin/*
+em_lab-1/obj/*
+=======
 #################
 ## Eclipse
 #################
@@ -213,3 +217,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+>>>>>>> 765f9aa9e137d4ce2a5d3660ab395a443a8c49e9
