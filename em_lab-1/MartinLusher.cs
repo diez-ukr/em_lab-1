@@ -47,8 +47,7 @@ namespace em_lab_1
                     }
                     if (seq_len == 3 - 1){
                         for (;seq_len >= 0; seq_len--)
-                        Console.WriteLine("n[" + i + seq_len + "] = " + numbers[i + seq_len] + "==" + "n[" + j + seq_len + "] = " + numbers[j + seq_len]);
-                        return j - i;
+                            return j - i;
 
                     }
                     
