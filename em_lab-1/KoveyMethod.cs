@@ -10,13 +10,12 @@ namespace em_lab_1
     {
         private long x;
         private long seed;
-        private int l;
+        private int l = 50;      //степень двойки - нужно для формулы (задаем руками, как хотим)
 
-        public KoveyMethod(long seed, int l)
+        public KoveyMethod(long seed)
         {
             this.x = seed;
             this.seed = seed;
-            this.l = l;
         }
 
         public long getNext()

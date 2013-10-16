@@ -61,6 +61,19 @@ namespace em_lab_1
             return currentYi;
         }
 
+        // period = NSK periodiv vhidnyh poslidovnostey
+        public int getT(int a, int b)
+        {
+            return a / gcd(a, b) * b;
+        }
+
+        private int gcd(int a, int b)
+        {
+            if (b == 0) 
+                return a;
+            return gcd(b, a % b);
+        }
+
         public long getNext()
         {
             updateCurrentXiYi();
