@@ -49,12 +49,12 @@
     <Compile Include="LinKongMethod.cs" />
     <Compile Include="MitchelMoor.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SequenceJoinMinus.cs" />
     <Compile Include="SequenceJoinPlus.cs" />
+    <Compile Include="QuadraticCongruentMethod.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
