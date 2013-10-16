@@ -39,7 +39,6 @@ namespace em_lab_1
                 }
                 if (!positive)
                     retval *= -1;
-
                 return retval;
             }
             public byte nextMax()
