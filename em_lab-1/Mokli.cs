@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace em_lab-1
+namespace em_lab_1
 {
     class Mokli: IGenerator
     {
@@ -31,6 +31,7 @@ namespace em_lab-1
         public long getNext()
         {
             next = nextRand((int)val1, (int)val6);
+            val1 = next;
             return next;
         }
     }
