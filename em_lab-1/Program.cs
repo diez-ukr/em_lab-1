@@ -7,7 +7,7 @@ namespace em_lab_1
     {
         static void Main()
         {
-            IGenerator k = new LevisPayne(2378329262345678);
+            IGenerator k = new Marsalli(163957472);
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine(k.getNext());
